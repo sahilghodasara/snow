@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --theme-red: #e82a2a;
+  --there-dark: #535353;
+}
+body {
+  background-color: #f3f4f8;
+  font-family: "Lato", sans-serif;
+}
+p {
+  letter-spacing: 0.3px;
+  font-weight: 300;
+}
+/* constants */
+.bg-theme {
+  background-color: #f3f4f8;
+}
+.mb-10 {
+  margin-bottom: 10rem;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+.my-5 {
+  margin: 5rem 0;
+}
+.my-6 {
+  margin: 6rem 0;
+}
+.py-6 {
+  padding: 6rem 0;
+}
+.gap-3 {
+  gap: 30px;
+}
+.gap-2 {
+  gap: 20px;
+}
+.col-gap-30 {
+  gap: 30px 0;
+}
+.min-h-100 {
+  min-height: 120px;
+}
+.font-1_5 {
+  font-size: 1.5rem;
+}
+.font-1_1 {
+  font-size: 1.1rem;
+}
+.font-weight-bolder {
+  font-weight: 900 !important;
+}
+input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.zIndex1 {
+  z-index: 1;
+}
+/* constants */
+.container-cts {
+  margin: 0 2.4375rem 0 18.375rem;
+}
+
+.container-rts {
+  margin: 0 18.375rem 0 2.4375rem;
+}
+
+.rect-box {
+  width: 90vw;
+  background-color: var(--white);
+}
+.logo {
+  width: 110px;
+  height: 143px;
+  margin: 2rem 2.3125rem;
+}
+
+.banner-header {
+  font-size: 2.725rem;
+  line-height: 3.3125rem;
+  font-weight: 900;
+}
+
+.play-icon {
+  cursor: pointer;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+}
+
+.yt-icon {
+  cursor: pointer;
+  right: 12%;
+  bottom: 13%;
+}
+
+.banner-header span {
+  color: var(--theme-red);
+}
+.border-dotted {
+  gap: 10px;
+}
+.border-dotted span {
+  display: inline-block;
+  width: 12px;
+  height: 18px;
+  background-color: var(--theme-red);
+  transform: skewX(-30deg);
+}
+.banner-list {
+  list-style-image: url("../../assets/images/list-arrow.png");
+}
+.banner-list li {
+  font-size: 1.375rem;
+}
+
+.btn-red {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  background-color: var(--theme-red);
+  font-family: "Montserrat", sans-serif;
+}
+
+.saperator-arrow {
+  transform: rotate(90deg);
+}
+
+.companies img {
+  max-height: 90px;
+}
+.list-header {
+  color: var(--there-dark);
+  font-size: 1.375rem;
+}
+
+.testimonial-list li {
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+}
+
+.testimonial-box .clip-image {
+  top: -20%;
+  left: calc(50% - 60px);
+}
+
+.testimonial-box h4 {
+  color: var(--there-dark);
+  font-size: 1.2rem;
+}
+.service-header {
+  min-height: 120px;
+}
+.service-card img {
+  height: 100%;
+}
+.accordion > .card > .card-header {
+  margin-bottom: 0;
+}
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.accordion .card-header button[aria-expanded="false"]::after {
+  content: "";
+  background: url("../images/list-arrow.png");
+  position: absolute;
+  top: 35%;
+  right: 0;
+  height: 9px;
+  width: 28px;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  transition: 0.3s all;
+}
+
+.accordion .card-header button[aria-expanded="true"]::after {
+  content: "";
+  background: url("../images/list-arrow.png");
+  position: absolute;
+  top: 35%;
+  right: 0;
+  height: 9px;
+  width: 28px;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  transition: 0.3s all;
+}
+
+.bg-contact {
+  background: url(../images/rectangle.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-form p {
+  font-size: 1.275rem;
+}
+@media screen and (min-width: 1400px) {
+  .container-fluid-lg {
+    margin: 0 20rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .container-cts {
+    margin: 0 2.4375rem 0 10.375rem;
+  }
+  .container-fluid-lg {
+    margin: 0 8rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-cts {
+    margin: 0 0 0 2.4375rem;
+  }
+  .rect-box {
+    width: 95vw;
+  }
+  .container-fluid-lg {
+    margin: 0 3rem;
+  }
+  .flex-sm-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .mb-sm-4,
+  .my-sm-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  .btn-red {
+    font-size: 0.675rem;
+  }
+  .pr-sm-2,
+  .px-sm-2 {
+    padding-right: 0.5rem !important;
+  }
+  .bg-contact {
+    height: 1000px;
+  }
+}
